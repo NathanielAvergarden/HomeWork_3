@@ -2,7 +2,7 @@
 
 /* Задача 19  Напишите программу, которая принимает на вход пятизначное число и проверяет,
 является ли оно палиндромом.*/
-
+/*
 // Действие 1) Зарандомим неизвестное число:
 int number = new Random().Next(10000,99999);
 // Действие 2) Посмотрим на это число:
@@ -29,3 +29,26 @@ System.Console.WriteLine(fifthNum);
     {
         System.Console.WriteLine("Число не является Палиндромом");
     }
+*/
+
+
+/* Задача 21 Напишите программу, которая принимает на 
+вход координаты двух точек и находит расстояние между ними в 3D */
+
+// Действие 1) Зарандомим координаты точек a и b
+
+int ax = new Random().Next();
+int ay = new Random().Next();
+int az = new Random().Next();
+
+int bx = new Random().Next();
+int by = new Random().Next();
+int bz = new Random().Next();
+
+// Действие 2) Найдем расстояние между точками:
+
+double temp = Math.Round(Math.Sqrt(Math.Pow((bx - ax),2) + Math.Pow((by - ay),2) + Math.Pow((bz - az),2)),2);
+
+// Действие 3) Выведем temp:
+
+System.Console.WriteLine(temp);
